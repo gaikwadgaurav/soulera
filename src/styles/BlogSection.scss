@@ -1,0 +1,201 @@
+.blog-section {
+  background-color: #f7f7f7;
+
+  .blog-header {
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #777;
+      margin: 0;
+    }
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .blog-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .image-wrapper {
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          transition: transform 0.4s ease;
+        }
+      }
+
+      &:hover .image-wrapper img {
+        transform: scale(1.08);
+      }
+      .blog-content {
+        // background-color: #fff;
+        padding: 1rem 1rem 1.5rem 1rem;
+
+        h2 {
+          font-size: 1.25rem;
+          font-weight: 700;
+          margin: 0 0 0.5rem 0;
+        }
+
+        p {
+          font-size: 0.95rem;
+          color: #333;
+        }
+
+        .category {
+          display: inline-block;
+          color: #333;
+          font-size: 0.7rem;
+          font-weight: 600;
+          padding: 0.3rem 0.8rem;
+          border-radius: 999px;
+          margin-bottom: 0.75rem;
+          text-transform: uppercase;
+        }
+
+        .category.resources,
+        .category.lifestyle,
+        .category.entertainment {
+          background-color: #ffffff;
+        }
+
+        .category.resources {
+          color: #8888e2;
+        }
+        .category.lifestyle {
+          color: rgb(100 164 248);
+        }
+        .category.entertainment {
+          color: rgb(239 198 91);
+        }
+
+        .category.inspiration {
+          background-color: #a4a4ff;
+        }
+
+        .category.food {
+          background-color: #ff8b8b;
+        }
+        .category.resourcess {
+          background-color: #a4a4ff;
+        }
+      }
+
+      // Top 3: Colorful style, card not rounded – only content is
+      &:nth-child(-n + 3) {
+        border-radius: 12px;
+        // background-color: transparent;
+
+        img {
+          height: 300px;
+        }
+
+        .blog-content {
+          h2 {
+            font-size: 2.6rem; // Slight increase from 1.5
+            font-weight: 700;
+            margin: 0 0 0.25rem 0; // tighten spacing below h2
+            color: #fff;
+          }
+          p {
+            color: #fff;
+          }
+          .category {
+            background-color: #fff;
+            top: -30px;
+            position: relative;
+          }
+        }
+      }
+
+      // Bottom 3: Standard cards, whole card rounded
+      &:nth-child(n + 4) {
+        border-radius: 12px;
+        background-color: #fff !important;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+
+        img {
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+        }
+
+        .blog-content {
+          border-radius: 0 0 12px 12px;
+        }
+
+        .category {
+          top: -30px;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .blog-footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+
+    .footer-links {
+      margin-bottom: 1rem;
+
+      a {
+        margin: 0 0.75rem;
+        color: #7d7d7d;
+        font-size: 0.95rem;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .footer-socials {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      svg {
+        font-size: 1.2rem;
+        color: #7d7d7d;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #358fff;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 0.85rem;
+      color: #999;
+    }
+  }
+}

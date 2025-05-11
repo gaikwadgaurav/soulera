@@ -1,0 +1,63 @@
+.start {
+  padding: 2rem 3rem;
+  text-align: center;
+
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 1000;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+
+    .highlight {
+      color: #574fde;
+      display: block;
+    }
+  }
+
+  .description {
+    font-size: 1.25rem;
+    color: #888;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .button-wrapper {
+      position: relative;
+      display: inline-block;
+
+      .purchase {
+        background-color: #574fde;
+        color: #f9f9f9;
+        padding: 1rem 2.5rem;
+        border: none;
+        border-radius: 9999px;
+        cursor: pointer;
+        font-size: large;
+      }
+
+      .price-tag {
+        position: absolute;
+        top: -10px;
+        right: -15px;
+        background-color: #60c384;
+        color: white;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+    }
+
+    a {
+      color: #574fde;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
