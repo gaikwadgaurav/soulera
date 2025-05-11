@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { FiSearch, FiMenu, FiX } from "react-icons/fi";
 import "../styles/Header.scss";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <div className="header-wrapper">
@@ -19,10 +23,10 @@ const Header: React.FC = () => {
         </button>
 
         <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-          <a href="#">Home</a>
-          <a href="#">Features</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <a href="/" className={isActive("/") ? "active" : ""}>Home</a>
+          <a href="/features" className={isActive("/features") ? "active" : ""}>Features</a>
+          <a href="/blog" className={isActive("/blog") ? "active" : ""}>Blog</a>
+          <a href="/contact" className={isActive("/contact") ? "active" : ""}>Contact</a>
           <button className="search-button" aria-label="Search">
             <FiSearch size={20} />
           </button>

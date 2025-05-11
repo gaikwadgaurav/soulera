@@ -38,6 +38,13 @@
     a {
       text-decoration: none;
       color: #333;
+      position: relative;
+      transition: color 0.3s;
+
+      &.active {
+        color: #574fde;
+        font-weight: 600;
+      }
     }
 
     .search-button {
