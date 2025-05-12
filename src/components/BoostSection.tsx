@@ -1,6 +1,6 @@
 import { MdPhoneIphone } from "react-icons/md";
-import boostImage from "../assets/boost-productivity.png";
-import automateImage from "../assets/automated-tasks.png";
+import boostImage from "/public/assets/boost-productivity.png";
+import automateImage from "/public/assets/automated-tasks.png";
 import "../styles/BoostSection.scss";
 
 const BoostSection = () => {

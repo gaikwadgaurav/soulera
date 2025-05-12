@@ -19,6 +19,7 @@
     color: #888;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    padding: 0 1rem;
   }
 
   .buttons {
@@ -58,6 +59,42 @@
       color: #574fde;
       text-decoration: none;
       font-weight: 500;
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .buttons {
+      .purchase {
+        font-size: 1rem;
+        padding: 0.75rem 2rem;
+      }
+
+      .price-tag {
+        font-size: 0.65rem;
+        top: -8px;
+        right: -10px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .description {
+      font-size: 0.95rem;
     }
   }
 }

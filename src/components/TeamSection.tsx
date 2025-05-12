@@ -1,46 +1,57 @@
 import { FaTwitter, FaGithub } from "react-icons/fa";
 import "../styles/TeamSection.scss";
 
+// Importing images
+import freddyImage from "/public//assets/team/freddy.png";
+import carlImage from "/public//assets/team/carl.png";
+import susanImage from "/public//assets/team/susan.png";
+import tommyImage from "/public//assets/team/tommy.png";
+import ronImage from "/public//assets/team/ron.png";
+import peteImage from "/public//assets/team/pete.png";
+import kellyImage from "/public//assets/team/kelly.png";
+import alexisImage from "/public//assets/team/alexis.png";
+
+// Define team members
 const teamMembers = [
   {
     name: "Freddy Smith",
     role: "CEO and Founder",
-    image: "src/assets/team/freddy.png",
+    image: freddyImage,
   },
   {
     name: "Carl Jones",
     role: "CTO and Co Founder",
-    image: "src/assets/team/carl.png",
+    image: carlImage,
   },
   {
     name: "Susan Peterson",
     role: "Marketing Director",
-    image: "src/assets/team/susan.png",
+    image: susanImage,
   },
   {
     name: "Tommy Barnes",
     role: "Designer",
-    image: "src/assets/team/tommy.png",
+    image: tommyImage,
   },
   {
     name: "Ron Jonson",
     role: "Senior Developer",
-    image: "src/assets/team/ron.png",
+    image: ronImage,
   },
   {
     name: "Pete Tompkins",
     role: "Web Developer",
-    image: "src/assets/team/pete.png",
+    image: peteImage,
   },
   {
     name: "Kelly Richards",
     role: "Sales Manager",
-    image: "src/assets/team/kelly.png",
+    image: kellyImage,
   },
   {
     name: "Alexis Jordan",
     role: "Affiliate Manager",
-    image: "src/assets/team/alexis.png",
+    image: alexisImage,
   },
 ];
 
@@ -72,4 +83,3 @@ const TeamSection = () => {
 };
 
 export default TeamSection;
-

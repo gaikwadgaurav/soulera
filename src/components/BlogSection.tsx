@@ -6,13 +6,22 @@ import {
   FaDribbble,
 } from "react-icons/fa";
 
+// Importing images
+import refreshingImage from "/public/assets/refreshing.png";
+import healthyImage from "/public/assets/healthy.png";
+import gamingImage from "/public/assets/gaming.png";
+import techImage from "/public/assets/tech.png";
+import foodImage from "/public/assets/food.png";
+import bookImage from "/public/assets/book.png";
+
+// Define blog posts
 const blogPosts = [
   {
     title: "Refreshing Designs",
     category: "Resources",
     description:
       "Quench satisfying designs to help you stir up emotion and tell a story.",
-    image: "src/assets/refreshing.png",
+    image: refreshingImage,
     color: "#8e5cff",
   },
   {
@@ -20,7 +29,7 @@ const blogPosts = [
     category: "Lifestyle",
     description:
       "Living a healthier lifestyle will help with your productivity and your mind-set.",
-    image: "src/assets/healthy.png",
+    image: healthyImage,
     color: "#4da6ff",
   },
   {
@@ -28,7 +37,7 @@ const blogPosts = [
     category: "Entertainment",
     description:
       "Learn about the evolution of gaming and how it started a revolution.",
-    image: "src/assets/gaming.png",
+    image: gamingImage,
     color: "#f7c442",
   },
   {
@@ -36,7 +45,7 @@ const blogPosts = [
     category: "Inspiration",
     description:
       "Check out these inspiring workstations to get ideas on how to level-up.",
-    image: "src/assets/tech.png",
+    image: techImage,
     color: "#e6e6e6",
   },
   {
@@ -44,7 +53,7 @@ const blogPosts = [
     category: "Food",
     description:
       "Learn how to be more disciplined in your diet to maximize productivity.",
-    image: "src/assets/food.png",
+    image: foodImage,
     color: "#e6e6e6",
   },
   {
@@ -52,7 +61,7 @@ const blogPosts = [
     category: "Resourcess",
     description:
       "What does it mean to have a design mind-set? Learn how to improve your eye.",
-    image: "src/assets/book.png",
+    image: bookImage,
     color: "#e6e6e6",
   },
 ];
